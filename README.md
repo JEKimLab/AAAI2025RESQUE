@@ -24,8 +24,19 @@ python3.8 ReSQuE/Noise/RNoise.py
   -n_lvl LEVEL 
 ```
 
+To obtain RESQUE for tasks:
+```bash
+python3.8 ReSQuE/Task/RTask.py
+  -m MODEL_PATH/model.pkl \
+  -s SAVE_RESULTS_TO \
+  -d DATASET \
+  -cl LAYER_NAME \
+  -rs RANDOM_SEED \
+  -mt MODEL_TYPE 
+```
+
 ## Retraining
-To retrain a model, run `NoiseRetraining/train_dir/retrain.py` in the following format with the path of the original model:
+To retrain a model for distribution shifts, run `NoiseRetraining/train_dir/retrain.py` in the following format with the path of the original model:
 ```bash
 python3.8 NoiseRetraining/train_dir/retrain.py
   -mp PATH_TO_MODEL/model.pkl \
@@ -38,8 +49,20 @@ python3.8 NoiseRetraining/train_dir/retrain.py
   -n_lvl LEVEL
 ```
 
+To retrain a model for tasks, run `TaskRetraining/retrain_task.py` in the following format with the path of the original model:
+```bash
+python3.8 TaskRetraining/retrain_task.py
+  -mp PATH_TO_MODEL/model.pkl \
+  -save PATH_TO_SAVE \
+  -acc CUTOFF_ACCURACY \
+  -rs RANDOM_SEED \
+  -tl TRANSFORMS_LR \
+  -d DATASET
+
+```
+
 ## Retraining configurations
-`options` contains the JSON configurations format for learning rate schedule, training transformations, and cutoff plans. Edit the default values according to the desired training/testing scheme.
+`options` and `configurations` contains the JSON configurations format for learning rate schedule, training transformations, and cutoff plans. Edit the default values according to the desired training/testing scheme.
 
 ## Code Carbon Initialization
 To initialize Code Carbon, for measuring energy and carbon emission, run the following command to setup the carbon tracker instance:
