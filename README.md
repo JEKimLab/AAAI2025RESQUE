@@ -1,7 +1,5 @@
 # RESQUE: Quantifying Estimator to Task and Distribution Shift for Sustainable Model Reusability
 
-# To be updated (TBU)
-
 This is the official implementation of **RESQUE: Quantifying Estimator to Task and Distribution Shift for Sustainable Model Reusability**
 
 ## Installation
