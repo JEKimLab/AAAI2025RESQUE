@@ -1,0 +1,8 @@
+{
+    "transforms_train": [
+        "torchvision.transforms.RandomHorizontalFlip()", "torchvision.transforms.RandomRotation(25)", 
+        "torchvision.transforms.RandomAffine(degrees=20, shear=20, scale=(0.75,1.25))", 
+        "torchvision.transforms.ColorJitter(brightness=0.25, contrast=0.25, saturation=0.25, hue=0.25)", 
+        "torchvision.transforms.ToTensor()", "torchvision.transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))"
+        ]
+}
