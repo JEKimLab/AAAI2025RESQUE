@@ -1,0 +1,10 @@
+{
+    "cutoff1": {
+        "acc_diff": "first cutoff difference",
+        "epochs" : "first cutoff epochs"
+    },
+    "cutoff2": {
+        "acc_diff": "second cutoff difference",
+        "epochs" : "second cutoff epochs"
+    }
+}

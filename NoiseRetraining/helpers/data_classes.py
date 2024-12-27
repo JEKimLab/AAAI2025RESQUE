@@ -26,4 +26,3 @@ def class_count(trainset):
         return unique_labels, len(unique_labels)
     except:
         pass
-    

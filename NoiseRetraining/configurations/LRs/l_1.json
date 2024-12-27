@@ -1,0 +1,9 @@
+{
+    "lr": "initial learning rate",
+    "weight_decay": "weight_decay",
+    "lr_schedule" : {
+        "epoch count 1" : "new learning rate 1",
+        "epoch count 2" : "new learning rate 2",
+        "epoch count 3" : "new learning rate 3"
+        }
+}
