@@ -69,3 +69,15 @@ To initialize Code Carbon, for measuring energy and carbon emission, run the fol
 ```bash
 ! codecarbon init
 ```
+
+
+## Citation
+```
+@inproceedings{sangarya2024resquequantifyingestimatortask,
+      title={RESQUE: Quantifying Estimator to Task and Distribution Shift for Sustainable Model Reusability}, 
+      author={Vishwesh Sangarya and Jung-Eun Kim},
+      year={2025},
+      booktitle={39th Annual AAAI Conference on Artificial Intelligence. AAAI 2025}
+      url={https://arxiv.org/abs/2412.15511}
+}
+```
